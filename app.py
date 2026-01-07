@@ -7,7 +7,7 @@ import time
 # ============================================
 st.set_page_config(
     page_title="محول المحاضرات الصوتية", 
-    page_icon="🎙️", 
+    page_icon="🎙", 
     layout="wide"
 )
 
@@ -106,7 +106,7 @@ def create_summary(text):
 # ============================================
 
 # العنوان
-st.title("🎙️ محول المحاضرات الصوتية إلى ملخصات")
+st.title("🎙 محول المحاضرات الصوتية إلى ملخصات")
 st.markdown("""
 <div style='background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
             padding: 1rem; border-radius: 10px; color: white; text-align: center;'>
@@ -136,7 +136,8 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     audio_file = st.file_uploader(
-        "اختر ملف صوتي للمحاضرة",type=['mp3', 'mp4', 'wav', 'm4a', 'webm', 'flac', 'ogg'],
+        "اختر ملف صوتي للمحاضرة",
+type=['mp3', 'mp4', 'wav', 'm4a', 'webm', 'flac', 'ogg'],
         help="الحد الأقصى: 25 MB"
     )
 
@@ -271,7 +272,8 @@ if audio_file:
             )
             
         except Exception as e:
-            st.error(f"❌ حدث خطأ غير متوقع: {str(e)}")st.info("حاول مرة أخرى أو جرب ملف آخر")
+            st.error(f"❌ حدث خطأ غير متوقع: {str(e)}")
+st.info("حاول مرة أخرى أو جرب ملف آخر")
 
 # الشريط الجانبي
 with st.sidebar:
@@ -284,7 +286,7 @@ with st.sidebar:
     - 🎯 تحويل دقيق للصوت
     - 📝 تلخيص تلقائي
     - 💯 مجاني تماماً
-    - ⚡ سريع وسهل
+    - ⚡️ سريع وسهل
     - 🔒 آمن ومحمي
     
     ### الملفات المدعومة:
