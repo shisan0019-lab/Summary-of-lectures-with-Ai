@@ -1,4 +1,4 @@
-رقية كرسي 🌀, [07/01/2026 10:44 ص]
+
 import streamlit as st
 import requests
 import time
